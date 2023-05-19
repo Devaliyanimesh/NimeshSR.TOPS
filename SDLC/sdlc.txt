@@ -1,0 +1,25 @@
+1)	What is software? What is software engineering?
+Ans. :- Software is a set of instructions, data or programs used to operate computers and execute specific tasks. 
+             Software engineering is the process of developing, testing and deploying computer applications to solve real-world problems by adhering to a set of engineering principles and best practices.
+
+2)Explain types of software.
+Ans. :- The 4 Main Types of Software:
+A. Application Software
+This is the most common type of computer software, and can be defined as end-user programs that help you perform tasks or achieve a desired outcome. The end-user is the person who is actually using a product or program. (They are the one for whom the “end result” is designed.) Some examples of application software include internet browsers, a CRM tool like Hubspot, a photo-editing software like Adobe or Lightroom, or a word processing application like Microsoft Word. Application software is installed on a computer or mobile device based upon a user’s need. Because this is the most common type of software, there are many options available and users can choose the one that best fits their needs, budget, and expectations. (For example, anyone wanting to look on the internet could use Chrome, Safari, or even Firefox.)
+B. System Software
+System software helps the user, the computer or mobile device, and an application all work together seamlessly. This makes system software crucial to running any kind of application software as well as the whole computer system. 
+Think about when your laptop or phone has an update. This is system software in action: there is a tweak made to the system software that helps your computer or phone continue to work well and keep applications running. Apple’s iOS is an example of system software, as is Microsoft Windows. System software is always running in the background of your device, but it is never something you will use directly. In fact, the only time most people remember it’s there is when it is time for an update.
+C. Programming Software:
+While application software is designed for end-users, and system software is designed for computers or mobile devices, programming software is for computer programmers and developers who are writing code. These are programs that are used to write, develop, test, and debug other software programs. It’s helpful to think of these programs as a translator of sorts: they take programming languages like Laravel, Python, C++, and more and translate them into something a computer or phone will understand. 
+D. Driver Software
+This software is often considered to be a type of system software. Driver software operates and controls devices that are plugged into a computer. These drivers make it possible for devices to perform their necessary functions. A very good (and practical) example of this is your printer. When you are first setting up your printer to work with your computer, you have to install software to connect the two so that they communicate and print anything you need. 
+
+3)What is SDLC? Explain each phase of SDLC.
+Ans. :-  The Software Development Life Cycle refers to a Methodology with clearly defined processes for Creating high quality software.
+The  SDLC  Methodology Focuses on the following Phase of Software  Development
+1)	Requirement Gathering
+2)	Analysis
+3)	Designing
+4)	Implementation
+5)	Testing
+6)	Maintenance
