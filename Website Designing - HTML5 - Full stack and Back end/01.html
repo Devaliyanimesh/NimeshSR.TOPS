@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        .navbar {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .navbar .nav-margin {
+            margin: 0px 40px;
+        }
+
+        .navbar .nav-padding {
+            padding: 20px 0px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav .logo {
+            flex: 1;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        .nav .list ul {
+            display: flex;
+            list-style: none;
+            margin-right: 30px;
+        }
+
+        .nav .list ul li {
+            margin-left: 25px;
+            padding: 15px;
+
+        }
+
+        .nav .list ul li a {
+            font-size: 18px;
+            text-decoration: none;
+            color: rgb(245, 242, 237);
+        }
+
+        .nav .list ul .parent {
+            position: relative;
+
+        }
+
+        .nav .list ul .parent:hover ul {
+            display: block;
+        }
+
+        .nav .list ul .parent ul {
+            position: absolute;
+            flex-direction: column;
+            left: 0;
+            margin-top: 0px;
+            padding: 12px;
+            width: 82px;
+            display: none;
+
+        }
+
+        .nav .list ul .parent ul li {
+            background-color: black;
+            margin-left: -10px;
+            padding: 8px;
+            color: white;
+
+
+        }
+
+        .nav .login button {
+            width: 70px;
+            height: 30px;
+            background-color: white;
+            color: black;
+            border: transparent;
+            border-radius: 5px;
+        }
+
+        .nav .list ul .parent ul .new {
+            position: relative;
+        }
+        .nav .list ul .parent ul .new:hover ul {
+            display: block;
+        }
+        .nav .list ul .parent ul .new ul {
+            position: absolute;
+            margin-top: -38px;
+            margin-left: 92px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-margin nav-padding">
+            <div class="nav">
+                <div class="logo">
+                    LOGO
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li class="parent"><a href="">Services </a><span class="fa-solid fa-angle-down"></span>
+                            <ul>
+                                <li>Web design</li>
+                                <hr>
+                                <li>Marketing</li><hr>
+                                <li>Wordpress</li><hr>
+                                <li class="new">More <span class="fa-solid fa-angle-right"></span>
+                                    <ul>
+                                        <li>Html</li><hr>
+                                        <li>Css</li><hr>
+                                        <li>Javascript</li><hr>
+                                        <li>Jquery</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <button>Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
