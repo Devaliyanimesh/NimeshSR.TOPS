@@ -1,0 +1,272 @@
+  
+  Q.1.What is Javascript?
+
+  Ans: JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images,
+ 
+        and pretty much everything else.
+        One of many JavaScript HTML methods is getElementById().
+       The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":
+
+       document.getElementById("demo").innerHTML = "Hello JavaScript";
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  Q.2.What is the use of is NaN function?
+
+ Ans: In JavaScript, NaN is short for "Not-a-Number".
+
+     In JavaScript, NaN is a number that is not a legal number.
+
+     The Global NaN property is the same as the Number.Nan property.
+
+     For Example:let x = Number.NaN;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  Q.3.What is negative Infinity ?
+
+ Ans: NEGATIVE_INFINITY is a special numeric value that is returned
+     when an arithmetic operation or mathematical function generates a negative value greater than the largest representable number in JavaScrip.
+
+    (i.e., more negative than -Number. MAX_VALUE) . JavaScript displays the NEGATIVE_INFINITY value as -Infinity .for.ex:Number.isFinite(123)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ Q.4.Which company developed java Script ?
+
+ Ans: Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262 standard in 1997.
+
+      After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser.
+       Mozilla's latest version was 1.8.5.
+      
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ Q.5.What are underland and undefined variables ?
+
+ Ans:JavaScript, an underscore is used to denote private variables or functions
+     The undefined property indicates that a variable has not been assigned a value, or not declared at all.
+    Example   
+    Variable not declared:
+
+    if (typeof y === "undefined") {
+
+    txt = "y is undefined";
+
+    } else {
+
+    txt = "y is defined";
+    }
+  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ Q.6.Write code for adding new elements dynamically ?
+ 
+ Ans:The createElement() method in JavaScript can be used to create new items dynamically. 
+     The setAttribute() method is used to set the attributes of the newly generated element.
+     By clicking a button, a modal box appears and collects the required information dynamically.
+     
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  Q.7.What is the difference between View state and sessionState ?
+
+ Ans:ViewState is to manage state at the client's end, making state management easy for end-user while SessionState manages state at the server's end.
+ ============session state ===========
+
+ * Can be persisted in memory, which makes it a fast solution. Which means state cannot be shared in the Web Farm/Web Garden.
+ 
+ * Can be persisted in a Database, useful for Web Farms / Web Gardens.
+
+ * Is Cleared when the session dies - usually after 20min of inactivity.
+
+ ============ ViewState==========
+
+ * Is sent back and forth between the server and client, taking up bandwidth.
+
+ * Has no expiration date.
+
+ * Is useful in a Web Fability.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  Q.8.What is === operator?
+ 
+ Ans:The strict equality (===) operator checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator
+ 
+    the strict equality operator always considers operands of different types to be different.
+  
+     <!-- how to operate your data -->
+
+     (1)Assignment
+     <!--     =,+=,-=,*=,/=,%=      -->
+     (2)Arithmetic
+
+     <!--   +,-,/,%,++(increment) --(decrement) -->
+     (3)comparision
+
+     <!--      >,<,>=,<=,-=,!=       -->
+     (4)logical
+
+     <!--   &&(and) ,||(or),  !(not) -->
+
+     (5)bit wise(32 bit system)
+
+     <!--   & ,||, > -->
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+  Q.9.How can the style/class of an element be changed? 
+  
+  Ans:Another way to alter the style of an element is by changing its class attribute.
+  
+   class is a reserved word in JavaScript, so in order to access the element's class, you use element. className .
+
+   Ex: var sheet = document.createElement('style')
+       sheet.innerHTML = "div {border: 2px solid black; background-color: blue;}";
+        document.body.appendChild(sheet);
+
+      var sheetToBeRemoved = document.getElementById('styleSheetId');
+      var sheetParent = sheetToBeRemoved.parentNode;
+      sheetParent.removeChild(sheetToBeRemoved);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  Q.10. How to read and write a file using JavaScript? 
+ 
+  Ans:We will use normal JavaScript operations to create and save the text file on the user’s computer
+
+     Users can use the HTML <a> tag to create a text file from the custom content and save it.
+
+    Developers should follow the below syntax to create a text file from the text input and save it.
+   
+   Create element with <a> tag
+   const link = document.createElement("a");
+   
+   Add file content in the object URL
+   link.href = URL.createObjectURL(file);
+   
+  Add click event to <a> tag to save file.
+  link.click();
+  URL.revokeObjectURL(link.href);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+  Q.11.• What are all the looping structures in JavaScript? 
+ 
+  Ans:Loops are handy, if you want to run the same code over and over again, each time with a different value.
+
+      Often this is the case when working with arrays:
+
+   text += cars[0] + "<br>";
+   text += cars[1] + "<br>";
+   text += cars[2] + "<br>";
+   text += cars[3] + "<br>";
+   text += cars[4] + "<br>";
+   text += cars[5] + "<br>";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ Q.12.How can you convert the string of any base to an integer in JavaScript?
+
+  Ans:To convert a string to an integer parseInt(), Number(), and Unary operator(+) function is used in javascript
+
+      parseInt() function returns Nan( not a number) when the string doesn't contain number. 
+
+ ===> If a string with a number is sent, then only that number will be returned as the output.
+ ===> Number.isInteger(123);
+     Number.isInteger(-123);
+     Number.isInteger('123');
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ Q.13.• What is the function of the delete operator?
+
+  Ans:The delete operator removes a property from an object. If the property's value is an object and there are no  more references to
+  
+     the object held by that property is eventually released automatically.
+   const Employee = {
+  firstname: 'John',
+  lastname: 'Doe'
+   };
+   
+   console.log(Employee.firstname);
+  Expected output: "John"
+
+ delete Employee.firstname;
+
+  console.log(Employee.firstname);
+  Expected output: undefined
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  Q.14.What are all the types of Pop up boxes available in JavaScript? 
+   
+  Ans:JavaScript has three kind of popup boxes:(1) Alert box, (2)Confirm box, and (3)Prompt box.
+  
+  ===>if (confirm("Press a button!")) {
+      txt = "You pressed OK!";
+     } else {
+    txt = "You pressed Cancel!";
+     }
+
+ ==>
+  let person = prompt("Please enter your name", "Harry Potter");
+  let text;
+  if (person == null || person == "") {
+  text = "User cancelled the prompt.";
+  } else {
+  text = "Hello " + person + "! How are you today?";
+  }
+====>
+   alert("Hello\nHow are you?");
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ Q.15.• What is the use of Void (0)?
+  
+  Ans:JavaScript void 0 means returning undefined (void) as a primitive value
+     
+      You might come across the term “JavaScript:void(0)” while going through HTML documents.
+      It is used to prevent any side effects caused while inserting an expression in a web page.
+    
+    *syntex:<a href="javascript:console.log('1');">Link</a>
+   
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  Q.16.• How can a page be forced to load another page in JavaScript?
+    
+   Ans:use window. location object to force a page to load another page.
+   
+      If you want to open URL with JavaScript, the open() method of Window interface is the best option. The JavaScript
+      window.open() method opens a new browser window. Use _blank in the second parameter of window.open()
+      method to open a URL in a new tab using JavaScript.
+ ===> window.open('https://www.codexworld.com', '_blank');
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ Q.17.What are the disadvantages of using innerHTML in JavaScript? 
+ 
+  Ans:HTML stands for Hyper Text Markup Language, through the HTML we can design a block of webpages. Html is a frontend markup language that is used to build
+      build the content of frontend pages. It means that we can build a structure of web pages.
+
+     ====>Through HTML we can design the content of any website. It means that we can create headings, buttons, paragraphs, headers, footers, links, etc for any
+          website.                                                                                                         
+
+  Example:<!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Basic of HTML</title>
+          </head>
+         <body>
+         <h1>H1 Heading </h1>
+         <p>This is a paragraph </p>
+         <a href = "#">Link</a>
+         <br><br>
+         <button>Button</button>
+         <footer>This is a footer</footer>
+         </body>
+         </html>
+
+===================================================================///////////////////////////////////===============================================================
