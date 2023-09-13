@@ -14,6 +14,7 @@ let h = {
         {
           name: "thar",
           type: "car",
+          number: "0004",
         },
       ],
       son: [
@@ -75,6 +76,8 @@ let h = {
   ],
 };
 
-console.log("familey tree:", h);
-
-
+console.log(h.name);
+console.log(h.son[1].name);
+console.log(h.son[1].son[1].name);
+console.log(h.son[2].vehilcle[1].name);
+console.log(h.son[0].vehilcle[1].number);
