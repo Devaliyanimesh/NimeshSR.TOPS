@@ -1,6 +1,7 @@
-let h = {
+let familytree = {
   name: "nagjibhai",
   age: 78,
+  city: "surat",
   son: [
     {
       name: "harsukhbhai",
@@ -76,8 +77,14 @@ let h = {
   ],
 };
 
-console.log(h.name);
-console.log(h.son[1].name);
-console.log(h.son[1].son[1].name);
-console.log(h.son[2].vehilcle[1].name);
-console.log(h.son[0].vehilcle[1].number);
+// console.log(h.name);
+// console.log(h.son[1].name);
+// console.log(h.son[1].son[1].name);
+// console.log(h.son[2].vehilcle[1].name);
+// console.log(h.son[0].vehilcle[1].number);
+
+for (const key in familytree) {
+  console.log("------->:", key);
+  familytree.key;
+  console.log("------>:", familytree[key]);
+}
