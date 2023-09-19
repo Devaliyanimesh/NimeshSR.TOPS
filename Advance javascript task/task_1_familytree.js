@@ -88,9 +88,3 @@ let familytree = {
 //   familytree.key;
 //   console.log("------>:", familytree[key]);
 // }
-let sum = 0;
-let chil = familytree.child[1].son.map((e) => {
-  // console.log(e);
-  return (sum += e.age);
-});
-console.log(sum);
