@@ -2,7 +2,7 @@ let familytree = {
   name: "nagjibhai",
   age: 78,
   city: "surat",
-  son: [
+  child: [
     {
       name: "harsukhbhai",
       age: 45,
@@ -83,8 +83,14 @@ let familytree = {
 // console.log(h.son[2].vehilcle[1].name);
 // console.log(h.son[0].vehilcle[1].number);
 
-for (const key in familytree) {
-  console.log("------->:", key);
-  familytree.key;
-  console.log("------>:", familytree[key]);
-}
+// for (const key in familytree) {
+//   console.log("------->:", key);
+//   familytree.key;
+//   console.log("------>:", familytree[key]);
+// }
+let sum = 0;
+let chil = familytree.child[1].son.map((e) => {
+  // console.log(e);
+  return (sum += e.age);
+});
+console.log(sum);

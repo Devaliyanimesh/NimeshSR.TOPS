@@ -26,8 +26,6 @@ let arry = ["name", "age", "address"];
 // fruits.reverse();
 // console.log("alphebetically-------->", fruits);
 
-
-
 //***slice */
 
 // const fruits = ["Banana", "Orange", "Apple", "Kiwi", "lpopo"];
@@ -36,10 +34,6 @@ let arry = ["name", "age", "address"];
 // console.log(slice);-slice 0 ane 2 ni vacheni badthi value batdse and tema pehli value batave and last value batavti nathi
 // fruits.splice(1, 2, "loll");
 // fruits.splice(2, 1, "loll");
-
-
-
-
 
 // console.log(" fruits:", fruits);
 
@@ -50,13 +44,9 @@ let arry = ["name", "age", "address"];
 // // fruits.splice(0, 2, "loll");
 // // bane value jati rey che ama ane add thai jay che
 
-
-
-
 //*** splice */
 // const fruits = [1, 2, 3, 4, 5];
 // console.log("fruits:", fruits);
-
 
 // fruits.splice(1, 1, 200);
 // console.log("new", fruits);
@@ -104,6 +94,9 @@ let arry = ["name", "age", "address"];
 
 ///***sort
 
-// let num = [1, 20, 3, 4, 9, 5, 6];
+let num = [1, 20, 3, 4, 9, 5, 6];
 // num.sort();
 // console.log("~ num:", num);
+
+let cf = num.reverse();
+console.log(cf);
