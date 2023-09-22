@@ -80,3 +80,12 @@ let array = [1, 2, 3, 4, 5];
 // for (let i = array.length - 1; i >= 0; i--) {
 //   console.log(array[i]);
 // }
+
+// 14.uv hello world
+// output--world uv hello
+
+let arr = "uv hello world";
+// let x = arr.split("");
+// x.reverse();
+// let y = x.join("");
+// // console.log("--->", y);

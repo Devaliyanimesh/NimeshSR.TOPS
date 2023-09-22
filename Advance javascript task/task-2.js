@@ -1,23 +1,25 @@
 let array = [1, 2, 3, 4, 5];
 
 // task-1
-/* reduce addition method
+// reduce addition method
 
-let add = array.reduce((lastreturn, e) => {
-  return lastreturn + e;
-});
-console.log(add);
+// let add = array.reduce((yyygf, e) => {
+//   console.log("lastreturn", yyygf);
+//   console.log(e);
+//   return yyygf + e;
+// }, 5);
+// console.log(add);
 
------------------*/
+// -----------------
 
 // for loop
-/*
+
 var num = 0;
 for (let i = 0; i < array.length; i++) {
   num += array[i];
 }
 console.log(num);
---------------*/
+// --------------
 //map
 
 // let sum = 0;
@@ -50,9 +52,18 @@ console.log(joiin);
 //tak -5 3child  sun age  adition
 
 // let sum = 0;
+
 // let chil = familytree.child[1].son.map((e) => {
 //   // console.log(e);
 //   return (sum += e.age);
 // });
 // console.log(sum);
 
+// let array = [1, 2, 3, 4, 5];
+
+// let lol = array.some((e, i) => {
+//   console.log(" ee:", e);
+//   console.log(" i:", i);
+//   array > 1;
+// });
+// console.log(" lol:", lol);
