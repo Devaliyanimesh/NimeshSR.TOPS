@@ -89,6 +89,3 @@ let x = arr.split("");
 x.reverse();
 let y = x.join("");
 console.log("--->", y);
-
-let fd = y.replace("dlrow olleh vu", "olleh uv olleh");
-console.log("🚀 ~ file: TASK_2.JS:94 ~ fd:", fd);
