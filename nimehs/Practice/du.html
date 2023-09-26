@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+ 
+        }
+    </style>
+       <script>
+        function cli(){
+        let colo=document.getElementById("color").value;
+       document.getElementById("box").style.backgroundColor=colo;
+        return false
+        
+      
+        }
+    </script>
+</head>
+<body>
+    <form action="#">
+    <input type="color" id="color" value="">
+
+    <button onclick=" return cli()">Submit</button>
+    </form>
+    <p id="box"></p>
+ 
+</body>
+</html>

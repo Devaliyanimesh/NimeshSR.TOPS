@@ -1,0 +1,121 @@
+/* @media (min-width:992px) {
+
+    .header .icon {
+        margin-right: 60px;
+    }
+
+    .navbar .navbar-mar {
+        margin: 0px 15px;
+    }
+
+    .navbar .nav .img {
+
+margin-left: 47%;
+    }
+    .navv2 {
+        display: none;
+    }
+    .navv3 {
+     display: none;
+    
+    }
+    .navv4 {
+
+    right: 15px;
+    }    
+    .imges .imges-mar {
+        margin: 0px 20px;
+    }
+    .imges .img-wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+    
+    }
+    .img-wrapping .imgg-marging {
+        margin: 0px 20px;
+    }
+    .img-wrapping .disp {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(4, 1fr);
+    
+    }
+    .wall3 .wall-margin {
+        margin: 0px 20px;
+    }
+    .wall3 .wall-padding {
+        padding: 0px 0px;
+    }
+    .wall3 .wall-box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 5px;
+    }
+    .wall3 .wall-box .wall-one .para1 {
+    
+        margin-top: -40%;
+        margin-left: 25%;
+  
+    }
+    .wall3 .wall-box .wall-one .para1 p {
+        font-size: 15px;
+ 
+        font-weight: 400;
+     
+    }
+    .wall3 .wall-box .wall-one .para1 button {
+        width: 80px;
+        height: 35px;
+        font-weight: 600;
+        font-size: 10px;
+    
+  
+    }
+    .wall3 .wall-box .wall-two .para2 {
+       
+        margin-top: -40%;
+        margin-left: 25%;
+    }
+    .wall3 .wall-box .wall-two .para2 p {
+        font-size: 15px;
+ 
+        font-weight: 400;
+    }
+    .wall3 .wall-box .wall-two .para2 button {
+        width: 80px;
+        height: 35px;
+        font-weight: 600;
+        font-size: 10px;
+    }
+    .wall-mar{
+        margin: 0px 40px;
+    }
+    .wallpa .wallbox .btn {
+    position: absolute;
+    bottom: 35px;
+    margin: 0px  45%;
+
+}
+    .comme-box{
+        margin: 0px 20px;
+    }
+    .comme-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    
+    }
+    footer .f-box .contact {
+
+        display: flex;
+        gap: 60px;
+        margin-top: 40px;
+        margin-left: 32%;
+        color: white;
+    
+    
+    }
+} 
+  */

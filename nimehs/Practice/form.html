@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 2px solid black;
+            width: 50%;
+          text-align: center;
+            height: auto;
+        }
+    
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            padding: 20px;
+            
+          }
+          span{color: red;}
+    </style>
+</head>
+<body>
+    <div class="form">
+
+        <form action="#">
+            <h1>Registration Form</h1>
+            <div class="row">
+                      <div class="col">
+                  <label for="">First Name</label>
+                </div>
+                <div class="col2">
+                    <input type="text" id="fname" onkeyup="key(this,'msg1')">
+                </div>
+                <div class="col3">
+                    <span id="msg1" class="msg">
+
+                    </span>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col">
+            <label for="">Email</label>
+          </div>
+          <div class="col2">
+              <input type="text" id="email" onkeyup="lol()">
+          </div>
+          <div class="col3">
+              <span id="msg2" class="msg">
+
+              </span>
+          </div>
+
+      </div>
+            <div class="btn">
+                <button onclick="return but()">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

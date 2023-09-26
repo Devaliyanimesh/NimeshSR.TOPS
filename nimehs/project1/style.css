@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.fix {
+    /* display: none; */
+    background-color: black;
+    position: fixed;
+    width: 25.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: aliceblue;
+
+}
+
+.img {
+    margin: auto;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 10px solid rgb(46, 41, 41);
+    overflow: hidden;
+
+}
+
+.img img {
+    height: 130px;
+    width: 130px;
+}
+
+.fix button {
+
+    border-radius: 50%;
+    font-size: 17px;
+    background-color: rgba(128, 128, 128, 0.281);
+    color: aliceblue;
+    border: none;
+    padding: 6px 10px;
+    margin: 0px 5px;
+
+}
+
+.fix button:hover {
+    background-color: hsl(197, 84%, 45%);
+}
+
+.fix .name {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.fix .app {
+    text-align: center;
+
+}
+
+.fix .navi ul li span {
+    font-size: 16px;
+}
+
+.fix .navi ul li {
+    letter-spacing: 1px;
+    color: gray;
+}
+
+.fix .navi ul li:hover span {
+    color: hsl(197, 84%, 45%);
+}
+
+.fix .navi ul li span.active {
+    color: hsl(197, 84%, 45%);
+
+
+}
+
+.fix .navi ul li a.active {
+    color: white;
+}
+
+.fix .navi ul li a {
+    color: gray;
+}
+
+.fix .navi ul li:hover a {
+    color: white;
+}
+
+.footer p {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+
+.pl {
+    position: relative;
+    background-color: aqua;
+    background: url(img/5977e70d-8d41-4e6e-b102-9ff989254058.jpg) center center/cover;
+    z-index: 1;
+
+}
+
+.pl::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    top: 0;
+    z-index: -1;
+}
+
+.lol {
+
+    display: grid;
+    place-content: center;
+    color: aliceblue;
+    height: 637px;
+}
+
+.navi ul {
+    list-style: none;
+}
+
+
+.right {
+    margin-top: 15px;
+    margin-left: 95%;
+    display: none;
+
+}
+
+.right span {
+    padding: 10px;
+    background-color: hsl(197, 84%, 45%);
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    position: fixed;
+
+}
+
+.grid p {
+    position: absolute;
+    overflow: hidden;
+    height: 50px;
+    animation: slide 2.5s steps(19) infinite alternate;
+    border-bottom: 2px solid rgb(233, 224, 224);
+
+}
+
+.main {
+    display: flex;
+}
+
+.g {
+    width: 95%;
+    height: 13px;
+
+}
+
+.css {
+    width: 90%;
+    height: 13px;
+    margin-left: 12px;
+    background-color: gray;
+    border-radius: 10px;
+
+}
+
+.c {
+    width: 70%;
+    height: 13px;
+
+
+
+}
+
+.gg {
+    width: 75%;
+    height: 13px;
+}
+
+.ggg {
+    width: 85%;
+    height: 13px;
+}
+
+.gggg {
+    width: 80%;
+    height: 13px;
+}
+
+.heading1 {
+ 
+
+   border-left: 4px solid rgb(33, 136, 177);
+    position: relative;
+
+}
+
+.heading1::after {
+    content: "";
+    top: -19px;
+    left: -11px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(33, 136, 177);
+    background-color: white;
+
+}
+
+
+
+@keyframes slide {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 420px;
+    }
+}
+
+/*Medea Query*/
+@media (max-width:576px) {
+    .fix {
+
+        z-index: 111;
+        height: 638px;
+        width: 50% !important;
+        left: -380px;
+        transition: 1s ease-in-out all;
+
+
+    }
+
+    .mainn {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .main {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .box {
+        width: 100% !important;
+    }
+
+    .right {
+        margin-top: 15px;
+        margin-left: 90%;
+        display: block;
+        position: absolute;
+
+    }
+
+    .fixx {
+        display: block;
+        left: 0;
+        width: 40%;
+        transition: 1s ease-in-out all;
+    }
+
+    .hhh {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fix .app {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .navi ul {
+        margin-top: -21px;
+    }
+    .main-resum{
+        display: grid !important;
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .main-resum .resum1{
+        width: 100% !important;
+    }
+
+    .main-resum .resum2{
+        width: 100% !important;
+    }
+}
+
+@media (min-width:576px) {
+    .fix {
+        /* display: none; */
+        z-index: 111;
+        height: 638px;
+        left: -380px;
+        transition: 1s ease-in-out all;
+
+    }
+
+    .mainn {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .fix .app {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .navi ul {
+        margin-top: -21px;
+    }
+
+    .right {
+        margin-top: 15px;
+        margin-left: 90%;
+        display: block;
+        position: absolute;
+
+    }
+
+    .fixx {
+        display: block;
+        left: 0;
+        width: 40%;
+        transition: 1s ease-in-out all;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box {
+        width: 100% !important;
+    }
+
+    .fixx {
+        display: block;
+        left: 0;
+        width: 40%;
+        transition: 1s ease-in-out all;
+    }
+
+    .hhh {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-resum{
+        display: grid !important;
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .main-resum .resum1{
+        width: 100% !important;
+    }
+
+    .main-resum .resum2{
+        width: 100% !important;
+    }
+
+
+}
+
+@media (min-width:768px) {
+    .fix {
+        /* display: none; */
+        z-index: 111;
+        height: 638px;
+        left: -500px;
+        transition: 1s ease-in-out all;
+
+    }
+
+    .mainn {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .fix .app {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .navi ul {
+        margin-top: -21px;
+    }
+
+    .right {
+        margin-top: 15px;
+        margin-left: 90%;
+        display: block;
+        position: absolute;
+
+    }
+
+    .fixx {
+        display: block;
+        left: 0;
+        width: 50%;
+        transition: 1s ease-in-out all;
+
+    }
+
+    .hhh {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box {
+        width: 100% !important;
+    }
+    .main-resum{
+        display: grid !important;
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .main-resum .resum1{
+        width: 100% !important;
+    }
+
+    .main-resum .resum2{
+        width: 100% !important;
+    }
+
+
+}
+
+@media (min-width:992px) {
+    .fix {
+        display: block;
+        z-index: 111;
+        height: 638px;
+        left: 0;
+
+
+    }
+
+    .fix .app {
+        text-align: unsets;
+        margin-top: unset;
+    }
+
+    .navi ul {
+        margin-top: unset;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .hhh {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .mainn {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .box {
+        width: 50% !important;
+    }
+    .main-resum{
+        display: grid !important;
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+    .main-resum .resum1{
+        width: 100% !important;
+    }
+
+    .main-resum .resum2{
+        width: 100% !important;
+    }
+}
+
+@media (min-width:1200px) {
+    .fix {
+        display: block;
+        z-index: 111;
+        height: 638px;
+        left: 0;
+        transition: 1s ease-in-out all;
+
+    }
+
+    .right {
+        display: none;
+    }
+
+    .hhh {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main {
+        display: flex;
+        grid-template-columns: unset;
+    }
+
+    .box {
+        width: unset;
+    }
+    .main-resum{
+        display: grid !important;
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+    .main-resum .resum1{
+        width: 100% !important;
+    }
+
+    .main-resum .resum2{
+        width: 100% !important;
+    }
+
+}
+
+
+
+
+.h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: hsl(197, 84%, 45%);
+    margin-top: 10px;
+
+
+}

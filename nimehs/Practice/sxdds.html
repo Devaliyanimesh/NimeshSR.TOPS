@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        /* background-color: #a12e2e; */
+      }
+    </style>
+    <script>
+      function nik() {
+        let sela = document.getElementById("color").value;
+        document.getElementById("msg").style.backgroundColor = sela;
+        return false;
+      }
+    </script>
+  </head>
+
+  <body>
+    <form action="#">
+      <input type="color" id="color" value="" />
+      <button onclick=" return nik() ">Select</button>
+    </form>
+    <p id="msg"></p>
+  </body>
+
+</html>
