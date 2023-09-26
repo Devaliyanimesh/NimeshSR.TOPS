@@ -11,9 +11,10 @@ function time() {
     let second = current.getSeconds();
     console.log(`current Time----> ${hors}:${time}:${second}`);
   }, 1000);
+
+  setTimeout(() => {
+    clearInterval(i);
+  }, 1000);
 }
-// setTimeout(() => {
-//   clearInterval(i);
-// }, 1000);
 
 time();
