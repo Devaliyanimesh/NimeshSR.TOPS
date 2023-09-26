@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            p {
+                height: 100px;
+                width: 100px;
+                border-radius: 10px;
+
+
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <input type="text" id="color1" value="" placeholder="enter color name"
+            style="margin: 15px  15px; width: 100px;">
+        <input type="text" id="color2" value="" placeholder="enter color name" style="width: 100px;">
+        <button onclick="nik()">Display</button>
+        <hr>
+        <p id="msg"></p>
+        <p id="msg1"></p>
+
+
+
+        <script>
+            function nik() {
+
+                let colo1 = document.getElementById("color1").value
+                let colo2 = document.getElementById("color2").value
+                document.getElementById("msg").style.backgroundColor = colo1
+                document.getElementById("msg").style.border = colo1
+
+                document.getElementById("msg1").style.backgroundColor = colo2
+
+            }
+        </script>
+    </body>
+
+</html>

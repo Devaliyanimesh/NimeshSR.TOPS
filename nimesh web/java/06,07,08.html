@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar {
+                background-image: linear-gradient(50deg, rgb(218, 108, 108), rgb(138, 204, 51));
+            }
+
+            .navbar .nav-margin {
+                margin: 0px 40px;
+            }
+
+            .navbar .nav-padding {
+                padding: 20px 0px;
+            }
+
+            .box {
+                align-items: center;
+                display: flex;
+
+
+
+
+            }
+
+            .navbar .box .logo {
+                flex: 1;
+            }
+
+            .navbar .box .logo span {
+                font-size: 25px;
+                color: aliceblue;
+
+            }
+
+            .box .hide {
+                /* width: fit-content; */
+                position: absolute;
+                left: 0;
+                top: 0px;
+                background-color: rgb(235, 142, 35);
+                width: 20%;
+                height: 100%;
+                display: block !important;
+            }
+
+
+
+            .box .hide ul {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+
+
+            }
+
+            .box .hide ul li {
+
+                padding: 10px;
+                padding-left: 5px;
+            }
+
+            .box .hide ul li a {}
+
+
+
+
+
+
+
+            /**/
+            .box .nav {
+                /* flex: 2; */
+                display: none;
+            }
+
+            .box .nav ul {
+
+                display: flex;
+                list-style: none;
+                padding-right: 25px;
+
+            }
+
+            .box .nav ul li {
+                padding-left: 50px;
+
+            }
+
+            .box .nav ul li a {
+                text-decoration: none;
+                font-size: 19px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: rgb(238, 230, 230);
+            }
+
+            .box .barss span {
+                font-size: 25px;
+                color: aliceblue;
+
+            }
+
+            .box .barss {
+                margin-right: 25px;
+                cursor: pointer;
+            }
+
+            .box .mon {
+                cursor: pointer;
+                right: 25px;
+                position: absolute;
+            }
+
+            .box .mon span {
+                font-size: 25px;
+                color: aliceblue;
+
+            }
+
+            /*add css*/
+            .inter {
+                background-color: black;
+                color: aliceblue;
+            }
+
+            button {
+                top: 10px;
+                height: 40px;
+                width: 40px;
+                right: 10px;
+                position: absolute;
+                background-color: green;
+                color: white;
+                border: transparent;
+                border-radius: 5px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+        </style>
+
+    <body>
+        <div class="navbar">
+            <div class="nav-margin nav-padding">
+                <div class="box">
+                    <div class="logo">
+                        <span class="fa-solid fa-house"></span>
+                    </div>
+                    <div class="nav">
+
+                        <button id="click"><span class="fa-solid fa-close" </span></button>
+
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Pages</a></li>
+                        </ul>
+                    </div>
+                    <div class="barss">
+                        <span class="fa-solid fa-bars"></span>
+
+                    </div>
+                    <div class="mon">
+                        <span class="fa-solid fa-moon"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js.js"></script>
+    </body>
+
+</html>

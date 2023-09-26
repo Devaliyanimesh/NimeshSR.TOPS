@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            p {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Minimum number find</h1>
+        1st Number: <input type="text" id="num1" value=""><br><br>
+        2st Number: <input type="text" id="num2" value=""><br><br>
+
+        <button style="margin-left: 120px;" onclick=" cal()">Display</button>
+
+        <p id="msg"></p>
+
+        <script>
+            function cal() {
+                let num1 = document.getElementById("num1").value
+                let num2 = document.getElementById("num2").value
+                let msg
+                if ((num1 == "" || num2 == "")) {
+                    alert("Plese enter the number")
+                }
+                else if (isNaN(num1) || isNaN(num2)) {
+                    alert("not a number")
+                } else if (num1 < num2) {
+                    document.getElementById("msg").innerHTML = "num1 is minimum"
+                }
+                else if (num2 < num1) {
+                    document.getElementById("msg").innerHTML = "num2 is minimum"
+                }
+                else {
+                    document.getElementById("msg").innerHTML = "num1 and num2 are equal     "
+                }
+
+            }
+        </script>
+    </body>
+
+
+</html>

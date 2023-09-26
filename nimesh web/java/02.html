@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            p {
+                width: 300px;
+
+                height: auto;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        Please Enttable number:<input type="text " id="table no" value="">
+        <button onclick=" return tb()">Display</button>
+        <p id="page"></p>
+    </body>
+    <script>
+        function tb() {
+
+
+            let table = document.getElementById("table no").value;
+            let div = document.getElementById("page")
+            if (table == "") {
+                alert("Please enter the number")
+            }
+            else if (isNaN(table)) {
+                alert("Enter only number")
+
+            }
+            else {
+                let i = 1, res = "";
+                for (i = 1; i <= 10; i++) {
+                    res = res + "<p>" + table + "&cross;" + i + "=" + (table * i) + "</p>";
+                }
+                div.innerHTML = res;
+            }
+        }
+    </script>
+
+</html>

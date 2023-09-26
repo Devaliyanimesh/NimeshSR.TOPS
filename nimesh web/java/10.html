@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 700px;
+        border: 2px solid black;
+        margin: auto;
+        padding: 20px;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 5px 0px;
+        align-items: center;
+      }
+
+      .row .col {
+        padding: 15px;
+      }
+      .dim{
+      margin-left:40%;
+        display: flex;
+      }
+      button {
+        margin-left: 200px;
+        width: 150px;
+        height: 35px;
+        margin-top: 15px;
+        background-color: blue;
+        color: white;
+      }
+      .main{
+        align-items: center;
+        display: flex;
+      }
+
+    </style>
+    <script src="clacu.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <h3>New user</h3>
+      <form action="#">
+        <div class="row">
+          <div class="col">
+            <label for="">1.C </label>
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="cla"
+              value=""
+              onkeyup="key()"
+              onblur=" return show()"
+            />
+          </div>
+          <div class="col">
+            <span id="msg"></span>
+          </div>
+          <div class="col">
+            <label for="">2.C++ </label>
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="c"
+              value=""
+              onkeyup="key()"
+              onblur=" return show()"
+            />
+          </div>
+          <div class="col">
+            <span id="msg"></span>
+          </div>
+          <div class="col">
+            <label for="">3.Database</label>
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="data"
+              value=""
+              onkeyup="key()"
+              onblur=" return show()"
+            />
+          </div>
+          <div class="col">
+            <span id="msg"></span>
+          </div>
+          <div class="col">
+            <label for="">4.Html</label>
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="html"
+              value=""
+              onkeyup="key()"
+              onblur=" return show()"
+            />
+          </div>
+          <div class="col">
+            <span id="msg"></span>
+          </div>
+          <div class="col">
+            <label for="">5.Css</label>
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="css"
+              value=""
+              onkeyup="key()"
+              onblur=" return show()"
+            />
+          </div>
+          <div class="col">
+            <span id="msg"></span>
+          </div>
+          <div class="col">
+            <label for="">6.PHP</label>
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="php"
+              value=""
+              onkeyup="key()"
+              onblur=" return show()"
+            />
+          </div>
+          <div class="col">
+            <span id="msg"></span>
+          </div>
+          <div class="col">
+            <label for="">7.Core Java</label>
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="core"
+              value=""
+              onkeyup="key()"
+              onblur=" return show()"
+            />
+          </div>
+          <div class="col">
+            <span id="msg"></span>
+          </div>
+        </div>
+      </form>
+      <button onclick="cla()">Result</button>
+      <br />
+      <div class="main">
+      <div class="bim">
+      <p>Total is:</span>
+      <span id="total"></span><span>/350</span>
+      </div>
+   <div class="dim">
+      <p>Percentage is :</span>
+      <span id="msssg"></span><span>%</span>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
