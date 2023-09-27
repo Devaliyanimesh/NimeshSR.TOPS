@@ -57,10 +57,10 @@ console.log(z) ___________________ point-z1
 
 
 what will print at x1-____error___
-what will print at y1-____error___
+what will print at y1-true
 what will print at z1-____error___
 what will print at x2-____error___
-what will print at y2-____error___
+what will print at y2-undefine
 what will print at z2-____error___
 
 ------------------------------------------------------------------------------------------
