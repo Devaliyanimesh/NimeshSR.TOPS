@@ -1,5 +1,5 @@
 // -> create array which have 1 to 9 no
-let array = [1, 2, 3, 4, 5];
+// let array = [1, 2, 3, 4, 5];
 
 // 1. print 9th and 10th index of array
 
@@ -84,8 +84,38 @@ let array = [1, 2, 3, 4, 5];
 // 14.uv hello world
 // output--world uv hello
 
-let arr = "uv hello world";
-let x = arr.split("");
-x.reverse();
-let y = x.join("");
-console.log("--->", y);
+// task-2
+
+//
+
+// 1. give all value which can devided by 2 - not use filter
+let arry = [1, 2, 3, 6, 7, 9, 3, 56, 8];
+
+// let devide = arry.map((e) => {
+//   return e /2;
+// });
+// console.log(" devide:", devide);
+
+let devide = arry.map((e) => {
+  return e > 2;
+});
+console.log(" devide:", devide);
+
+// 2. give all value above 3 by use of filter
+// let above = arry.filter((e) => {
+//   return e > 3;
+// });
+// console.log("above:", above);
+
+// 3. give index of 56
+// let index = arry.indexOf(56);
+// console.log(" index:", index);
+
+// 4. give true/false result when check given value is exists in array or not
+
+// task-4
+// let arr = "uv hello world";
+// let x = arr.split("");
+// x.reverse();
+// let y = x.join("");
+// console.log("--->", y);
