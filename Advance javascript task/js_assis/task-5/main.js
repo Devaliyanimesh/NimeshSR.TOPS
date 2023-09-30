@@ -26,13 +26,16 @@ let prod = require("./product.json");
 
 // population price
 
-function fun(username) {
-  let state = dataa.filter((e) => {
-    return e.state_name === username;
+function fun(user, popu) {
+  let state_namee = dataa.filter((e) => {
+    return e.state_name === user, e.population > popu;
+  });
+  let cityy = state_namee.map((e) => {
+    return e.city;
   });
 
-  return state;
+  return cityy;
 }
 
-let final = fun("Delhi");
+let final = fun("Delhi", "151427");
 console.log(" final:", final);
