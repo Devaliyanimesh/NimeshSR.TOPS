@@ -1,7 +1,7 @@
 let ij = [
   { city: "Najafgarh", state_name: "Delhi", population: "12031" },
   {
-    city: "Najafga",
+    city: "Najafgdfdfdfdfdf",
     state_name: "Delhi",
     population: "1203",
   },
@@ -11,7 +11,7 @@ let ij = [
 ];
 function fun2(user, popu) {
   let state_namee = ij.filter((e) => {
-    return e.state_name === user, e.population > popu;
+    return e.state_name === user && e.population > popu;
   });
   let cityy = state_namee.map((e) => {
     return e.city;
@@ -19,5 +19,5 @@ function fun2(user, popu) {
 
   return cityy;
 }
-let final = fun2("Delhi", "1203180");
+let final = fun2("Delhi", "120");
 console.log("final:", final);
