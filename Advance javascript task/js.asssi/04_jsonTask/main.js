@@ -37,6 +37,21 @@ let prod = require("./product.json");
 // let final = fun("Delhi", "163716");
 // console.log(" final:", final);
 
+// second type
+function fun(user, popu) {
+  let state_namee = dataa.filter((e) => {
+    return e.state_name === user;
+  });
+  let cityy = state_namee.map((e) => {
+    return e.city && e.population > popu;
+  });
+
+  return cityy;
+}
+
+let final = fun("Delhi", "163716");
+console.log(" final:", final);
+
 // 5. acending decending population wise
 // 6. top 5 city population wise [only name of city]
 // 7. give total populatin of state which give by user
