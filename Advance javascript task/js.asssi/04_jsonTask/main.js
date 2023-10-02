@@ -43,7 +43,7 @@ function fun(user, popu) {
     return e.state_name === user;
   });
   let cityy = state_namee.map((e) => {
-    return e.city && e.population > popu;
+    return e.population > popu && e.city;
   });
 
   return cityy;
