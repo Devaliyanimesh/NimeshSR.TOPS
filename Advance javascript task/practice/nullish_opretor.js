@@ -8,6 +8,6 @@
 
 //??
 //  null and undefined are availble in variable then second value show in output
-let a=100;
+let a = 100;
 let b = a ?? "test";
 console.log("----> b:", b);
