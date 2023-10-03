@@ -1,0 +1,4 @@
+1.SELECT pro_name,pro_id, pro_price FROM prod WHERE pro_price >=250 ORDER BY pro_price DESC;
+2.SELECT pro_name pro_price,MIN(pro_price) FROM prod;
+3.SELECT pro_name pro_price, AVG(pro_price) FROM prod WHERE cmp_name='asus';
+4.SELECT AVG(pro_price), pro_com FROM prod;
