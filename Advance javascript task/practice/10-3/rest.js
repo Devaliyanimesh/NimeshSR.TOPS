@@ -20,3 +20,16 @@
 // }
 // let sd = fun1(1, 2, 3, 4, 5, 6, 7);
 // console.log("sd", sd);
+
+//obj method
+
+// let obj = {
+//   a: 20,
+//   b: 30,
+//   c: 60,
+//   d: 90,
+// };
+// let { a, b, ...c } = obj;
+// console.log("a", a);
+// console.log("b", b);
+// console.log("c", c);
