@@ -21,6 +21,19 @@ let prod = require("./product.json");
 //   console.log(" cityofkarnatak:", cityofkarnatak);
 
 // 3. give all city name , which have more character than user given input
+
+// function fun1(user, mmcity) {
+//   let fil = dataa.filter((e) => {
+//     return e.state_name === user && e.city.length > mmcity;
+//   });
+//   let mappp = fil.map((e) => {
+//     return e.city;
+//   });
+//   return mappp;
+// }
+// let fill = fun1("Delhi", 15);
+// console.log("fill", fill);
+
 // 4. city list which has population more then user give
 
 // function fun(user, popu) {
@@ -56,10 +69,11 @@ let prod = require("./product.json");
 //   return ji;
 // }
 
-let final = fun("Delhi", 1633716);
-console.log(" final:", final);
+// let final = fun("Delhi", 1633716);
+// console.log(" final:", final);
 
 // 5. acending decending population wise
+
 // 6. top 5 city population wise [only name of city]
 // 7. give total populatin of state which give by user
 // 8. give top 5 state name population wise
