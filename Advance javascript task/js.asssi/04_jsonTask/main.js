@@ -74,6 +74,20 @@ let prod = require("./product.json");
 
 // 5. acending decending population wise
 
+function fun1(user) {
+  let stt = dataa.filter((e) => {
+    return e.state_name === user;
+  });
+  let cit = stt.map((e) => {
+    return e.population.length;
+  });
+
+  let sortt = cit.sort();
+
+  return sortt;
+}
+let ds = fun1("Delhi");
+console.log("ds", ds);
 // 6. top 5 city population wise [only name of city]
 // 7. give total populatin of state which give by user
 // 8. give top 5 state name population wise
