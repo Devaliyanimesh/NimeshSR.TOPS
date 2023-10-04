@@ -17,6 +17,7 @@
 //     console.log("loop is finished");
 //   }
 // }
+// error genrate by user
 
 // fun1(10);
 
