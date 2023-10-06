@@ -20,17 +20,21 @@
 function fun1(cb1, cb) {
   setTimeout(() => {
     console.log("------>first");
-    cb(cb1);
+    cb(cb2, cb1);
   }, 2000);
 }
 
-function funn2(cb2) {
+function funn2(cb2, arg2) {
   setTimeout(() => {
     console.log("------>second");
-    cb2();
+    cb2(arg2);
   }, 2000);
 }
-function funn3() {
+function funn3(cb3) {
   console.log("---->third");
+  cb3();
 }
-fun1(funn3, funn2);
+function funn4() {
+  console.log("----four");
+}
+fun1(funn3, funn4, funn2);
