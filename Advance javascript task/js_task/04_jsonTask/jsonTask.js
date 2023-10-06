@@ -94,6 +94,19 @@ console.log("ds", ds);
 */
 
 // 6. top 5 city population wise [only name of city] --------
+function fun2(user, user11) {
+  let first = dataa.filter((e) => {
+    return e.state_name === user && e.population > user11;
+  });
+  let secod = first.map((e) => {
+    return e.city;
+  });
+  let hh = secod.slice(0, 5);
+
+  return hh;
+}
+let final = fun2("Delhi", 150371);
+console.log("final", final);
 
 /*7. give total populatin of state which give by user  error---strig
 function fun(user) {
