@@ -73,7 +73,7 @@ let final = fun("Delhi", 1633716);
 console.log(" final:", final);
 */
 
-/*5. acending decending population wise
+/*5. acending decending population wise ----------------
 
 function fun1(user) {
   let stt = dataa.filter((e) => {
@@ -93,7 +93,7 @@ console.log("ds", ds);
 
 */
 
-// 6. top 5 city population wise [only name of city]
+// 6. top 5 city population wise [only name of city] --------
 
 /*7. give total populatin of state which give by user  error---strig
 function fun(user) {
@@ -108,4 +108,5 @@ function fun(user) {
 }
 let final = fun("Delhi");
 console.log("fgf", final);*/
-// 8. give top 5 state name population wise
+
+// 8. give top 5 state name population wise -------
