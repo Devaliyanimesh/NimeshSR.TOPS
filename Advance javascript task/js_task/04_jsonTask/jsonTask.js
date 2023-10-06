@@ -94,19 +94,22 @@ console.log("ds", ds);
 */
 
 // 6. top 5 city population wise [only name of city] --------
-function fun2(user, user11) {
-  let first = dataa.filter((e) => {
-    return e.state_name === user && e.population > user11;
-  });
-  let secod = first.map((e) => {
-    return e.city;
-  });
-  let hh = secod.slice(0, 5);
+// function fun2(user, user11) {
+//   let first = dataa.filter((e) => {
+//     return e.state_name === user;
+//   });
+//   let jj = first.sort(function (a, b) {
+//     return b.population - a.population;
+//   });
+//   let secod = first.map((e) => {
+//     return e.population;
+//   });
+//   let kk = secod.slice(0, 6);
 
-  return hh;
-}
-let final = fun2("Delhi", 150371);
-console.log("final", final);
+//   return kk;
+// }
+// let final = fun2("Delhi");
+// console.log("final", final);
 
 /*7. give total populatin of state which give by user  error---strig
 function fun(user) {
@@ -123,3 +126,16 @@ let final = fun("Delhi");
 console.log("fgf", final);*/
 
 // 8. give top 5 state name population wise -------
+
+// const data = [
+//   { name: "madan", age: "12" },
+//   { name: "man", age: "13" },
+//   { name: "dan", age: "14" },
+//   { name: "dam", age: "11" },
+//   { name: "ram", age: "17" },
+// ];
+
+// let h = data.sort(function (a, b) {
+//   return a.age - b.age;
+// });
+// console.log("h  h", h);
