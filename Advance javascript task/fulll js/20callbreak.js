@@ -1,40 +1,32 @@
-// function fun1(cb) {
-//   setTimeout(() => {
-//     console.log("------>");
-//     cb();
-//   }, 5000);
-// }
-
-// function fun2(fun1) {
-//   console.log("------->second print");
-// }
-
-// function funn3() {
-//   console.log("------->third");
-// }
-
-// fun1(fun2);
-
-// callbreak hell ak ni adar ak hoy tene karvani rit
-
-function fun1(cb1, cb) {
+function fun1(arg, cb) {
+  //   for (let i = 0; i < 1000000000; i++) {}
   setTimeout(() => {
-    console.log("------>first");
-    cb(cb2, cb1);
+    console.log("----->fun1");
+    cb(arg);
+  }, [2000]);
+}
+
+function fun2(cb2) {
+  setTimeout(() => {
+    console.log("----->fun2");
+    cb2();
+  }, 3000);
+}
+
+function fun3() {
+  setTimeout(() => {
+    console.log("----->fun3");
   }, 2000);
 }
+//   function fun4() {
+//     console.log("----->fun4");
+//   }
 
-function funn2(cb2, arg2) {
-  setTimeout(() => {
-    console.log("------>second");
-    cb2(arg2);
-  }, 2000);
-}
-function funn3(cb3) {
-  console.log("---->third");
-  cb3();
-}
-function funn4() {
-  console.log("----four");
-}
-fun1(funn3, funn4, funn2);
+fun1(fun3, fun2);
+
+/*
+   models.Movie.create(input, (err, result) => {
+        if (err) throw err;
+        else res.status(200).send(result);
+      });
+  */
