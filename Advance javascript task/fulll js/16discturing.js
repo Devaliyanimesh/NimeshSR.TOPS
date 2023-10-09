@@ -1,8 +1,15 @@
-// a = obj?.a;
-// b = obj?.b;
-console.log("a", a);
-console.log("B", B);
-console.log("b", b);
+// let obj = {
+//   a: 100,
+//   b: 200,
+// };
+
+// let { b, a, B } = obj;
+
+// // a = obj?.a;
+// // b = obj?.b;
+// // console.log("a", a);
+// // console.log("B", B);
+// // console.log("b", b);
 
 function returnObj() {
   return {
@@ -14,13 +21,13 @@ function returnObj() {
 // const obj2 = returnObj();
 // console.log("obj2", obj2);
 
-const { name, ciTy } = returnObj();
+const { name, city } = returnObj();
 console.log("name", name);
-console.log("city", ciTy);
+console.log("city", city);
 
-let arr = [1, 2, 3, 4];
+// let arr = [1, 2, 3, 4];
 
-let [x, y, z] = arr;
-console.log("y", y);
-console.log("z", z);
-console.log("x", x);
+// let [x, y, z] = arr;
+// console.log("y", y);
+// console.log("z", z);
+// console.log("x", x);
