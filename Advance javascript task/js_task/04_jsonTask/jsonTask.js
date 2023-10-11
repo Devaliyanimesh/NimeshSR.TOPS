@@ -111,7 +111,7 @@ console.log("ds", ds);
 // let final = fun2("Delhi");
 // console.log("final", final);
 
-/*7. give total populatin of state which give by user  error---strig
+/*7. give total populatin of state which give by user  
 function fun(user) {
   let statet = dataa.filter((e) => {
     return e.state_name === user;
@@ -126,7 +126,22 @@ let final = fun("Delhi");
 console.log("fgf", final);*/
 
 // 8. give top 5 state name population wise -------
+function fun() {
+  let state = dataa.filter((e) => {
+    return e.state_name === user;
+  });
+  let total = 0;
 
+  let p = state.map((e) => {
+    return (total += +e.population);
+  });
+  return total;
+}
+let final = fun();
+console.log("final", final);
+
+// let h = fun1();
+// console.log("h", h);
 // const data = [
 //   { name: "madan", age: "12" },
 //   { name: "man", age: "13" },
