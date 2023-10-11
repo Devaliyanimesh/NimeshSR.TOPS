@@ -126,22 +126,20 @@ let final = fun("Delhi");
 console.log("fgf", final);*/
 
 // 8. give top 5 state name population wise -------
-function fun() {
-  let state = dataa.filter((e) => {
+function fun(user) {
+  let statet = dataa.filter((e) => {
     return e.state_name === user;
   });
   let total = 0;
-
-  let p = state.map((e) => {
-    return (total += +e.population);
+  let city = statet.map((e) => {
+    total += +e.population;
   });
+
   return total;
 }
 let final = fun();
-console.log("final", final);
+console.log("fgf", final);
 
-// let h = fun1();
-// console.log("h", h);
 // const data = [
 //   { name: "madan", age: "12" },
 //   { name: "man", age: "13" },
