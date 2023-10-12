@@ -130,14 +130,14 @@ function fun(user) {
   let statet = dataa.filter((e) => {
     return e.state_name === user;
   });
-  let total = 0;
-  let city = statet.map((e) => {
-    total += +e.population;
+
+  let city = statet.reduce((last, e) => {
+    return (+last.population || last) + +e.population;
   });
 
-  return total;
+  return city;
 }
-let final = fun();
+let final = fun("Delhi");
 console.log("fgf", final);
 
 // const data = [
