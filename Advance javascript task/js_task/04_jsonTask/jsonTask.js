@@ -1,6 +1,29 @@
 let dataa = require("./data.json");
 let prod = require("./product.json");
 
+function fun() {
+  let one = prod.filter((e) => {
+    return (
+      e.gender === "male" &&
+      e.price > 100 &&
+      e.color[0] == "red" &&
+      e.discountPercentage > 16.49
+    );
+  });
+  let two = one.map((e) => {
+    return e.title;
+  });
+  let ext = [];
+  two.forEach((e) => {
+    if (e !== undefined) {
+      ext.push(e);
+    }
+  });
+  return ext;
+}
+let hg = fun();
+console.log("hg", hg);
+
 // 1. import data from json
 
 // Done
@@ -126,19 +149,19 @@ let final = fun("Delhi");
 console.log("fgf", final);*/
 
 // 8. give top 5 state name population wise -------
-function fun(user) {
-  let statet = dataa.filter((e) => {
-    return e.state_name === user;
-  });
+// function fun(user) {
+//   let statet = dataa.filter((e) => {
+//     return e.state_name === user;
+//   });
+//   let jj = statet.reduce((last, e) => {
+//     return (+last.population || last) + +e.population;
+//   });
 
-  let city = statet.reduce((last, e) => {
-    return (+last.population || last) + +e.population;
-  });
-
-  return city;
-}
-let final = fun("Delhi");
-console.log("fgf", final);
+//   return jj;
+// }
+// let final = fun("Delhi");
+// // let final1 = fun("");
+// console.log("fgf", final);
 
 // const data = [
 //   { name: "madan", age: "12" },
@@ -152,3 +175,22 @@ console.log("fgf", final);
 //   return a.age - b.age;
 // });
 // console.log("h  h", h);
+
+// (+last || last) + +e.population;
+
+// function fun(nn) {
+//   let jh = dataa.filter((e) => {
+//     return e.state_name;
+//   });
+//   let same = [];
+//   let ll = jh.forEach((e, i) => {
+//     if (e.state_name === e.state_name) {
+//       same.push(e);
+//     }
+//   });
+
+//   return same;
+// }
+// let fdf = fun();
+// console.log("fdf", fdf);
+// // console.log("jh  jh", jh);
