@@ -1,12 +1,15 @@
 const data = [
-    { id: "123", color: "Red", model: "Tesla" },
-    { id: "124", color: "Black", model: "Honda" },
-    { id: "125", color: "Red", model: "Audi" },
-    { id: "126", color: "Blue", model: "Resla" },
-  ],
-  keys = ["color", "model"],
-  values = ["Ho"],
-  regex = new RegExp(values.join("|")),
-  output = data.filter((e) => keys.some((k) => regex.test(e[k])));
+  {
+    name: "urvish",
+    age: [1, 2, 3, 4, 5, "test"],
+    obj: {
+      a: 40,
+      str: "test",
+    },
+  },
+];
 
-console.log(output);
+let df = JSON.stringify(data);
+console.log("df", df);
+let gg = JSON.parse(df);
+console.log("gg", gg);
