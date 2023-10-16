@@ -7,4 +7,4 @@ const pr = new Promise((resoved, reject) => {
     console.log("5 is not availble");
   }
 });
-pr;
+
