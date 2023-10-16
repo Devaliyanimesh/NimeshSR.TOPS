@@ -1,23 +1,22 @@
-const pr = new Promise((resoved, reject) => {
-  let one = [1, 2, 3, 4, 5, 6];
-  let fin = one.includes(5);
-  if (fin) {
-    resoved({ age: 20 });
+let pro = new Promise((resoved, reject) => {
+  let hg = [1, 2, 3, 4, 5];
+  let gf = hg.includes(50);
+  if (gf) {
+    resoved({ ki: 255 });
   } else {
-    reject("5 is not availble");
+    reject("--->not avalabel");
   }
 });
-pr.then((str) => {
-  console.log("---->");
-  return { ...str, name: "nimesh" };
-})
-  .then((res1) => {
-    console.log("--->", res1);
-    return { ...res1, study: "it felid" };
+
+pro
+  .then((cm1) => {
+    console.log("---->", cm1);
+    return { ...cm1, name: "Nimesh" };
   })
-  .then((res2) => {
-    console.log("--->", res2);
+  .then((cm2) => {
+    console.log("---->", cm2);
+    return { ...cm2, age: 16 };
   })
-  .catch((error) => {
-    console.log("****---->", error.message);
+  .catch((err) => {
+    console.log("--->", err.message);
   });
