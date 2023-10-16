@@ -149,27 +149,38 @@ let final = fun("Delhi");
 console.log("fgf", final);*/
 
 // 8. give top 5 state name population wise -------
-function fun(user) {
-  let statet = dataa.filter((e) => {
-    return e.state_name === user;
-  });
-  let jj = statet.reduce((last, e) => {
-    return (+last.population || last) + +e.population;
-  });
 
-  return jj;
-}
-let final = fun("Delhi");
-let final1 = fun("Karnātaka");
-console.log("Karnātaka", final1);
-console.log("Delhi", final);
+// function fun1() {
+//   let arr = [];
+//   let dsf = dataa.map((objel) => {
+//     // console.log("dataa--->", objel.state_name);
+//     let index = arr.findIndex((ele) => ele.state === objel.state_name);
+//     if (index === -1) {
+//       // console.log("-------if called");
+//       arr.push({
+//         state: objel.state_name,
+//         population: +objel.population,
+//       });
+//     } else {
+//       arr[index].population += +objel.population;
+//     }
+//   });
+
+//   let df = arr.sort(function (a, b) {
+//     return b.population - a.population;
+//   });
+//   return df;
+// }
+// let final = fun1();
+// console.log("final", final);
 
 //   { name: "madan", age: "12" },
 //   { name: "man", age: "13" },
 //   { name: "dan", age: "14" },
 //   { name: "dam", age: "11" },
 //   { name: "ram", age: "17" },
-// ];
+
+//
 
 // let h = data.sort(function (a, b) {
 //   return a.age - b.age;
