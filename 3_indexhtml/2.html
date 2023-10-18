@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        nav {
+            display: flex;
+            align-items: center;
+            /* background-color: rebeccapurple; */
+            padding: 20px;
+        }
+
+        .one {
+            /* flex: 1; */
+            display: none;
+        }
+
+        .onee {
+            /* flex: 1; */
+            display: block;
+        }
+        .onee ul {
+           width: 200px;
+           background-color: aqua;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .two {
+            position: absolute;
+            right: 15px;
+        }
+
+        .two span {
+            font-size: 20px;
+            color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="one">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Email</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="two">
+            <span class="fa-solid fa-bars click"></span>
+        </div>
+    </nav>
+    <script>
+        let clic = document.querySelector(".click")
+        let work = document.querySelector(".one")
+        clic.addEventListener("click", function () {
+            work.classList.toggle("onee")
+            if (work.classList.contains("onee") === true) {
+                clic.classList.remove("fa-bars")
+                clic.classList.add("fa-xmark")
+
+            }
+            else {
+                clic.classList.remove("fa-xmark")
+                clic.classList.add("fa-bars")
+            }
+        })
+    </script>
+</body>
+
+</html>

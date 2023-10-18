@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            margin: 0px 50px;
+        }
+
+        header {
+            background-color: transparent;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: 1s all cubic-bezier(0, 0.6, 0.37, 1.01);
+        }
+
+        /* === create random class for change header bg color */
+        .header-fixed {
+            background-color: brown;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: 1s all cubic-bezier(0, 0.6, 0.37, 1.01);
+        }
+
+        header .header-p {
+            padding: 10px 0px;
+        }
+
+        header .header-flex {
+            display: flex;
+            align-items: center;
+        }
+
+        header .header-flex .logo {
+            flex: 0.5;
+        }
+
+        header .header-flex .logo h1 {
+            color: white;
+        }
+
+        header .header-flex .navbar {
+            flex: 3;
+        }
+
+        header .header-flex .navbar ul {
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+        }
+
+        header .header-flex .navbar ul li a {
+            color: white;
+        }
+
+        header .header-flex .theme {
+            flex: 0.5;
+            display: flex;
+            justify-content: end;
+            color: white;
+            align-items: center;
+            gap: 20px;
+        }
+
+        header .header-flex .theme .togglebtn {
+            position: relative;
+        }
+
+        header .header-flex .theme button {
+            display: none;
+            height: 35px;
+            width: 35px;
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        header .cbtn {
+            display: flex;
+            justify-content: end;
+        }
+
+        header .closebtn {
+            display: none;
+            height: 35px;
+            width: 35px;
+            background: transparent;
+            border: 2px solid black;
+            border-radius: 5px;
+            color: black;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .homepage img {
+            width: 100%;
+        }
+
+        /* ============ create random class for add menubar on btn event ======== */
+        /* replace navbar class using navigate class */
+        /* this class add through javascript */
+        header .header-flex .navigate {
+            display: none;
+            background-color: rgb(255 255 255 / 89%);
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+        }
+
+        header .header-flex .navigate ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        header .header-flex .navigate ul li {
+            padding: 10px;
+        }
+
+        header .header-flex .navigate ul li a {
+            color: black;
+        }
+
+        /* ======================================================================== */
+        /* @media (max-width:576px) {
+        header .header-flex .navbar {
+            display: none;
+        }
+    
+        header .header-flex .theme button {
+            display: block;
+        }
+    
+        header .header-flex .navigate {
+            display: block;
+        }
+    
+        header .closebtn {
+            display: block;
+        }
+    }
+    
+    @media (min-width:576px) {
+        header .header-flex .navbar {
+            display: none;
+        }
+    
+        header .header-flex .theme button {
+            display: block;
+        }
+    
+        header .header-flex .navigate {
+            display: block;
+        }
+    
+        header .closebtn {
+            display: block;
+        }
+    }
+    
+    @media (min-width:992px) {
+        header .header-flex .navbar {
+            display: block;
+        }
+    
+        header .header-flex .theme button {
+            display: none;
+        }
+    
+        header .header-flex .navigate {
+            display: none;
+        }
+    
+        header .closebtn {
+            display: none;
+        }
+    } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-p">
+            <div class="header-flex">
+                <div class="logo">
+                    <h1>
+                        <span class="fa-solid fa-home-alt"></span>
+                        Logo
+                    </h1>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li class="cbtn">
+                            <button class="closebtn">
+                                <span class="fa-solid fa-close"></span>
+                            </button>
+                        </li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Help</a></li>
+                    </ul>
+                </div>
+                <div class="theme">
+                    <div>
+                        <span class="fa-solid fa-moon"></span>
+                    </div>
+                    <div class="togglebtn">
+                        <button class="tbtn">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="homepage">
+        <div class="homeimage">
+            <img src="wallpaper.jpg" alt="">
+        </div>
+    </section>
+
+    <script>
+        let tbtn = document.querySelector(".tbtn");
+        let nav = document.querySelector(".navbar");
+        let closebtn = document.querySelector(".closebtn")
+        tbtn.addEventListener("click", function () {
+            nav.classList.add("navigate");
+        })
+        closebtn.addEventListener("click", function () {
+            nav.classList.remove("navigate");
+        })
+    </script>
+
+</body>
+
+</html>

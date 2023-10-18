@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 2px solid black;
+            width: 50%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        span {
+            color: red;
+            font-size: 20px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            padding: 10px 20px;
+            align-items: center;
+            gap: 50px;
+
+            .col {
+                font-size: 20px;
+                font-weight: 600;
+                flex: 1;
+            }
+        }
+
+        button {
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <h1>Form validation</h1>
+        <div class="row">
+            <div class="col">
+
+                <label for="">FirstName</label>
+            </div>
+            <div class="col">
+                <input type="text" id="first" onkeyup="return fun2(this,'fir')" onblur="return check(this,'fir')">
+            </div>
+            <div class="col">
+                <span id="fir"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+
+                <label for="">MiddleName</label>
+            </div>
+            <div class="col">
+                <input type="text" id="second" onblur="return check(this,'firr')" onkeyup="return fun2(this,'firr')">
+            </div>
+            <div class="col">
+                <span id="firr"></span>
+            </div>
+        </div>
+
+        <button onclick="fun1()">Submit</button>
+    </form>
+    <script>
+        function fun1() {
+            let firstname = document.getElementById("first").value
+            let second = document.getElementById("second").value
+
+            if (firstname === "" || firstname === null) {
+                document.getElementById("fir").innerHTML = "Please fill up"
+            }
+            else if (second === "" || second === null) {
+                document.getElementById("firr").innerHTML = "Please fill up"
+
+            }
+            else {
+                document.getElementById("fir").innerHTML = ""
+                document.getElementById("firr").innerHTML = ""
+
+            }
+
+
+        }
+        // keyburd
+        function fun2(exp, spaind) {
+            let rgx = /^[a-zA-Z]*$/;
+            if (!rgx.test(exp.value)) {
+                document.getElementById(spaind).innerHTML = "please enter only alphabet"
+                return false
+            }
+            else {
+                document.getElementById(spaind).innerHTML = ""
+
+            }
+
+
+        }
+
+        // onblur
+
+        function check(blank, spred) {
+            if (blank.value === "" || blank.value === null) {
+                document.getElementById(spred).innerHTML = "Enter value....!"
+            }
+        }
+
+    </script>
+</body>
+
+</html>

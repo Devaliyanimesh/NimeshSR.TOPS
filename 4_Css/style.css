@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.section .margin{margin: 0px 60px;}
+.section .box .mini{
+    width: 100%;
+}
+.section .box .mini .h1{
+    background-color: black;
+    color: aliceblue;
+height: 200px;
+width: 100%;
+text-align: center;
+
+
+}
+.section .box .mini .h1 h1{
+    padding-top:22%;
+}
+.section .box .mini .p p{
+    padding: 10px 10px;
+}
+.section .box .mini .p{
+   padding-bottom: 20px;
+    height:auto;
+    width: 100%;
+    margin-top: auto;
+    background-color: rgb(235, 239, 242);
+}
+
+.section .box .mini .p button{
+ 
+  width: 80px;
+  height:30px;
+  
+}
+
+.section .box .mini .p .button{
+ 
+  margin: 0px 10px;
+  
+    
+  }
+
+  .section .box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
