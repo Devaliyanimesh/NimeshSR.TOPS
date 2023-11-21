@@ -1,4 +1,4 @@
-let timer = 10;
+let timer = 60;
 let score = 0;
 var hitrn = 0;
 
@@ -47,7 +47,7 @@ document.querySelector("#pbtm")
             makeBubble()
             getnewhit()
         }
-        ;
+        
     })
 
 runTimer()
