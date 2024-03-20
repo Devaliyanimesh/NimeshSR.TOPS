@@ -1,18 +1,4 @@
-@media  (min-width:568) {
-  .slider-section .slide-1 {
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   
-  }
-  .slider-section .slide-1 .image {
-    height: 200px;
-    width: 200px;
-  }
-  .flexx{
-    display: flex;
-    align-items: center;
-  }
-}
+
 @media (min-width: 576px) {
   .slider-section .slide-1{
     margin: 0 30px !important;
@@ -20,22 +6,44 @@
     gap: 50px;
   }
   .header {
+    padding: 20px 10px !important;
+    position: relative;
     padding-top: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+    /* background-color: aqua; */
   }
   
   .header .menu ul {
-    margin-top: 15px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     list-style: none;
+    display: none !important;
+
   }
-  
+  .header .menuu ul {
+    background-color: rgb(10, 178, 30); width: 100%;
+    top: 0 !important;
+    left :0 !important;
+    z-index: 11111 !important;
+    /* margin-top: 150px; */
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    display: block !important;
+
+  }
+  .header .menuu ul a{
+    color: aliceblue !important;
+  }
   .header .login {
+    display: none !important;
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -125,26 +133,48 @@
 }
 @media (max-width: 576px) {
   .header {
+    padding: 20px 10px !important;
+    position: relative;
     padding-top: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 380px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: aqua; */
   }
   
   .header .menu ul {
-    margin-top: 15px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     list-style: none;
+    display: none !important;
+
   }
-  
+  .header .menuu ul {
+    background-color: rgb(10, 178, 30); width: 100%;
+    top: 0 !important;
+    left :0 !important;
+    z-index: 11111 !important;
+    /* margin-top: 150px; */
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    display: block !important;
+
+  }
+  .header .menuu ul a{
+    color: aliceblue !important;
+  }
   .header .login {
+    display: none !important;
     margin-top: 10px;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 10px;
   }
   
@@ -236,23 +266,36 @@
 }
 
 @media (min-width:768px) {
-  
+  .menubtn{
+    display: none;
+  }
+  .flexx{
+    width: 100%;
+    background-color: brown;
+    padding-top: 50px 0px !important;
+
+  }
   .header {
-    padding-top: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-around !important;
     align-items: baseline;
     gap: 20px;
+    z-index: 1111;
     height: 54px;
   }
   
   .header .menu ul {
-    margin-top: 15px;
+    margin-top: unset;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: row !important;
+    gap: 15px;
+    list-style: none; 
+    width:100%;
+    background-color: aqua;
+    display: block !important;
+
   }
   
   .header .login {
@@ -261,6 +304,7 @@
     align-items: center;
     flex-direction: row;
     gap: 5px;
+    display: block !important;
   }
   
   .slider-section {

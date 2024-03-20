@@ -42,45 +42,43 @@
       /* Optional: Customize slider styles */
       .bx-wrapper {
         margin: 0px 0px !important ;
-        padding: 0px !important;
+        padding: 20px  10px!important;
       }
     </style>
   </head>
   <body>
     <!-- header -->
     <div class="flexx">
-
-    <div class="header">
-      <div class="logo">
-        <img src="images/Logo.png" alt />
+      <div class="header">
+        <div class="logo">
+          <img src="images/Logo.png" alt />
+        </div>
+        <div class="menubtn">
+          <button class="togglebtn">
+            <span class="fa-solid fa-bars-staggered"></span>
+          </button>
+        
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href><b>Home</b></a>
+            </li>
+            <li><a href>Service</a></li>
+            <li><a href>Feature</a></li>
+            <li><a href>Product</a></li>
+            <li><a href>Testimonial</a></li>
+            <li><a href>FAQ</a></li>
+          </ul>
+        </div>
+        <div class="login">
+          <button class="btn1">Login</button>
+          <button class="btn2">Sign up</button>
+        </div>
       </div>
-
-      <div class="menu">
-        <ul>
-          <li>
-            <a href><b>Home</b></a>
-          </li>
-          <li><a href>Service</a></li>
-          <li><a href>Feature</a></li>
-          <li><a href>Product</a></li>
-          <li><a href>Testimonial</a></li>
-          <li><a href>FAQ</a></li>
-        </ul>
-      </div>
-      <div class="login">
-        <button class="btn1">Login</button>
-        <button class="btn2">Sign up</button>
-      </div>
-     
+    
     </div>
-    <div class="menubtn">
-      <button class="togglebtn">
-        <span class="fa-solid fa-bars-staggered"></span>
-      </button>
-                
-    </div>
-  </div>
-
+   
     <!-- sider-section -->
     <div class="bxslider">
       <div class="slider-section">
@@ -290,17 +288,23 @@
       </div>
     </div>
     <script>
-      $(document).ready(function () {
-        $(".bxslider").bxSlider({
-          mode: "horizontal",
-          auto: true,
-          pause: 4000,
-          speed: 1000,
-          pager: true,
-          controls: false,
-          adaptiveHeight: true,
-        });
-      });
+          $(document).ready(function () {
+            $(".bxslider").bxSlider({
+              mode: "horizontal",
+              auto: true,
+              pause: 4000,
+              speed: 1000,
+              pager: true,
+              controls: false,
+              adaptiveHeight: true,
+            });
+          });
+         let clickk =document.querySelector(".togglebtn")
+         let work =document.querySelector(".menu")
+          clickk.addEventListener("click", function (){
+    // alert()   
+    work.classList.toggle("menuu")
+      })
     </script>
   </body>
 </html>
